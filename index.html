@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    
+  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    
+        <link rel="stylesheet" href="Content/jquery.mobile-1.2.0-beta.1.min.css" />
+        <link rel="stylesheet" href="Content/theme/default/style.css" />
+        <link rel="stylesheet" href="Content/Style.css" />
+        <script src="Scripts/jquery-1.8.1.min.js"> </script>
+        <script src="Scripts/jquery.mobile-1.2.0-beta.1.min.js"> </script>
+        <script src="Scripts/OpenLayers.js"> </script>
+        <script src="Scripts/Plugins.js"> </script>
+        <script src="Scripts/Application.js"> </script>
+    </head>
+    <body>
+        <div id="menuPage" data-role="page">
+            <div data-role="header">
+                <h1>Home</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+	                <li data-role="list-divider">Menu</li>
+	                <li><a href="#mapPage" data-transition="slide">Map</a></li>
+	                <li><a href="#">Captured</a></li>
+	                <li><a href="#">Tasks</a></li>
+	                <li><a href="#">Messages<span class="ui-li-count">12</span></a></li>
+                </ul>
+            </div>
+            <div data-role="footer"  data-position="fixed" class="ui-bar">
+	            <a href="#" data-role="button" data-icon="arrow-u">Sync</a>
+            </div>
+        </div>
+        <div id="mapPage" data-role="page">
+            <div data-role="header">
+                <a href="#menuPage" data-theme="b" data-icon="home" data-rel="back" >Menu</a> 
+                <h1>Map</h1> 
+                <a href="#menuPage" data-theme="b" data-icon="info" data-iconpos="notext" class="ui-btn-right">Locate</a> 
+            </div>
+            <div data-role="content">
+                <div id="mapDiv"></div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div id="mapToolbar" data-role="navbar" data-iconpos="left">
+                    <ul>
+                        <li><a href="#">Point</a></li>
+                        <li><a href="#">Area</a></li>
+                        <li><a href="#">Edit</a></li>
+                    </ul>
+                </div>
+                <div id="mapFeatureConfirm" data-role="navbar" data-iconpos="left" class="ui-screen-hidden">
+                    <ul>
+                        <li id="mapSave"><a href="#" data-icon="check">Save</a></li>
+                        <li id="mapCancel"><a href="#" data-icon="delete">Cancel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
