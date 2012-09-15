@@ -1,7 +1,5 @@
 ﻿#mapPage .ui-content {
     padding: 0;
-    width: 100%;
-    height: 100%;
 }
 
 #mapDiv {
@@ -10,3 +8,8 @@
     background-color: #FF00BFFF;
 }
 
+#featureDetailsForm {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
